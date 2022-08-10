@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <div class="Container">
+        <h1>Converter</h1>
+        <div id="from">
+            <form>
+                <label for="from"> From</label>
+                <br>
+                <select name="from" class="select" id="getForm">
+                    <option value="Hexadecimal" selected>Hexadecimal</option>
+                    <option value="Decimal">Decimal</option>
+                    <option value="Octal">Octal</option>
+                    <option value="Binary">Binary</option>
+                </select>
+            </form>
+            <div class="enterValue">
+                <input class="input" id="input1" type="text" placeholder="Enter the Number"/>
+            </div>
+
+        </div>
+        
+        <div id="To">
+            <form>
+                <label for="To">TO</label>
+                <br>
+                <select name="To" class="select" id="getTo">
+                    <option value="Hexadecimal">Hexadecimal</option>
+                    <option value="Decimal">Decimal</option>
+                    <option value="Octal">Octal</option>
+                    <option value="Binary" selected>Binary</option>
+                </select>
+            </form>
+            <div class="enterValue">
+                <input class="input" id="input2" type="text" placeholder="value"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="button" title="Convert" class="btn" onclick="convert()"><span>=</span> Convert</button>
+            <button type="button" title="Swap conversion" class="btn" onclick="swap()"> Swap</button>
+        </div>
+        
+
+
+
+    </div>
+</body>
+</html>
